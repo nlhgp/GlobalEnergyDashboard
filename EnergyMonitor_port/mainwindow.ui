@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1039</width>
+    <height>650</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QLineEdit" name="ipline">
+    <property name="geometry">
+     <rect>
+      <x>50</x>
+      <y>1</y>
+      <width>114</width>
+      <height>19</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="portline">
+    <property name="geometry">
+     <rect>
+      <x>50</x>
+      <y>24</y>
+      <width>114</width>
+      <height>19</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QTableWidget" name="tableWidget">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>250</y>
+      <width>421</width>
+      <height>281</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QLabel" name="iplabel">
+    <property name="geometry">
+     <rect>
+      <x>1</x>
+      <y>1</y>
+      <width>45</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>服务器ip：</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="portlabel">
+    <property name="geometry">
+     <rect>
+      <x>1</x>
+      <y>24</y>
+      <width>45</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>服务器端口</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="photolabel">
+    <property name="geometry">
+     <rect>
+      <x>360</x>
+      <y>0</y>
+      <width>321</width>
+      <height>261</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>photoLabel</string>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menuBar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1039</width>
+     <height>18</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="yearmenu">
+    <property name="title">
+     <string>按年份分析</string>
+    </property>
+    <addaction name="act_2022"/>
+    <addaction name="act_2021"/>
+    <addaction name="act_2020"/>
+    <addaction name="act_2019"/>
+    <addaction name="act_2018"/>
+   </widget>
+   <widget class="QMenu" name="summarymenu">
+    <property name="title">
+     <string>汇总分析</string>
+    </property>
+    <addaction name="act_5"/>
+    <addaction name="act_5_c"/>
+    <addaction name="act_5_h"/>
+   </widget>
+   <widget class="QMenu" name="menu">
+    <property name="title">
+     <string>切换国家视图</string>
+    </property>
+    <addaction name="actionChina"/>
+    <addaction name="actionAfrica"/>
+    <addaction name="actionRussia"/>
+    <addaction name="actionUSA"/>
+   </widget>
+   <addaction name="yearmenu"/>
+   <addaction name="summarymenu"/>
+   <addaction name="menu"/>
+  </widget>
+  <action name="act_2022">
+   <property name="text">
+    <string>2022</string>
+   </property>
+  </action>
+  <action name="act_2021">
+   <property name="text">
+    <string>2021</string>
+   </property>
+  </action>
+  <action name="act_5">
+   <property name="text">
+    <string>化石能源</string>
+   </property>
+  </action>
+  <action name="act_2020">
+   <property name="text">
+    <string>2020</string>
+   </property>
+  </action>
+  <action name="act_2019">
+   <property name="text">
+    <string>2019</string>
+   </property>
+  </action>
+  <action name="act_2018">
+   <property name="text">
+    <string>2018</string>
+   </property>
+  </action>
+  <action name="act_5_c">
+   <property name="text">
+    <string>低碳能源</string>
+   </property>
+  </action>
+  <action name="act_5_h">
+   <property name="text">
+    <string>可再生能源</string>
+   </property>
+  </action>
+  <action name="actionChina">
+   <property name="text">
+    <string>China</string>
+   </property>
+  </action>
+  <action name="actionAfrica">
+   <property name="text">
+    <string>Africa</string>
+   </property>
+  </action>
+  <action name="actionRussia">
+   <property name="text">
+    <string>Russia</string>
+   </property>
+  </action>
+  <action name="actionUSA">
+   <property name="text">
+    <string>USA</string>
+   </property>
+  </action>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
